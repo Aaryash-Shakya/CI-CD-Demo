@@ -6,7 +6,7 @@ on:
       - 'gh-pages'
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -21,10 +21,4 @@ jobs:
 
       - name: Build style sheet
         run: npm run build
-      
-      - name: Deploy to GH Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./index.html
+
