@@ -27,5 +27,4 @@ jobs:
         with:
           personal_token: ${{ secrets.SECRET_DEPLOYMENT_TOKEN }}
           publish_branch: gh-pages
-          external_repository: CI-CD-Demo.github.io
           publish_dir: ./index.html
