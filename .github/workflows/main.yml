@@ -21,10 +21,3 @@ jobs:
 
       - name: Build style sheet
         run: npm run build
-      
-      - name: Deploy to GH Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.SECRET_DEPLOYMENT_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./index.html
