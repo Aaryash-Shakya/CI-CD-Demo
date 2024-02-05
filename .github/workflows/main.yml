@@ -27,5 +27,4 @@ jobs:
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          external_repository: Aaryash-Shakya/CI-CD-Demo/CI-CD-Demo.github.io
           publish_dir: ./index.html
