@@ -16,6 +16,8 @@ function handleClick() {
 
 // randomFunction()
 
+wrongFunction()
+
 function someFunction(arg) {
 	return arg;
 }
